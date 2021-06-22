@@ -13,7 +13,7 @@ var level = 0;
 
 
 
-$(document).on("keydown", function (event) {
+$(document).on("keydown tap", function (event) {
 
     if (!started) {
         $("#level-title").html("Level " + level);
