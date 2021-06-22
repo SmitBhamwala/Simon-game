@@ -13,7 +13,7 @@ var level = 0;
 
 
 
-$(document).on("keydown", function (event) {
+$(".start-button").on("click touchstart", function (event) {
 
     if (!started) {
         $("#level-title").html("Level " + level);
@@ -77,7 +77,7 @@ function gameOver() {
 
     playSound("wrong");
 
-    $("#level-title").html("Game Over!! Your score is " + (level - 1) + ", Press Any Key to Restart");
+    $("#level-title").html("Game Over!! Your score is " + (level - 1));
 
     $("body").addClass("game-over");
     setTimeout(function () {
